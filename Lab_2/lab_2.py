@@ -20,8 +20,8 @@ from sklearn.metrics import (
 )
 
 
-train = pd.read_csv("UNSW_NB15_training-set.csv")
-test = pd.read_csv("UNSW_NB15_testing-set.csv")
+train = pd.read_csv("../UNSW_NB15_training-set.csv")
+test = pd.read_csv("../UNSW_NB15_testing-set.csv")
 
 print("Datasets loaded successfully!")
 print("Training shape:", train.shape)

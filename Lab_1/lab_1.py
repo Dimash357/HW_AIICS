@@ -1,8 +1,8 @@
 import pandas as pd
 
 
-train = pd.read_csv("UNSW_NB15_training-set.csv")
-test = pd.read_csv("UNSW_NB15_testing-set.csv")
+train = pd.read_csv("../UNSW_NB15_training-set.csv")
+test = pd.read_csv("../UNSW_NB15_testing-set.csv")
 df = pd.concat([train, test], ignore_index=True)
 
 print("Datasets loaded successfully!")
