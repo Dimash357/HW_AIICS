@@ -199,15 +199,4 @@ print(pd.DataFrame(results).to_string(index=False, float_format="%.4f"))
 print("\nPER-CLASS RECALL COMPARISON")
 print(recall_comparison.to_string(index=False, float_format="%.4f"))
 input("\nPress Enter to continue...")
-
-# REPORT QUESTIONS
-print("\nQ1: Macro F1 gives equal importance to every class, including rare attacks.\n"
-      "Accuracy and Weighted F1 can look high even when the model misses rare attacks\n"
-      "because common classes dominate the results.")
-print("\nQ2: A threshold of 0.5 may select no class or, in One-vs-Rest, several classes.\n"
-      "Lowering the threshold for rare attacks helps detect more of them,\n"
-      "but may produce more false alerts. Individual thresholds balance precision and recall.")
-print("\nQ3: The model may classify an unknown attack as a known attack or as Normal.\n"
-      "I would monitor traffic changes, prediction confidence, false alerts, and missed attacks,\n"
-      "then retrain the model with recent labelled data when needed.")
 print("\nLAB 3 COMPLETED")
